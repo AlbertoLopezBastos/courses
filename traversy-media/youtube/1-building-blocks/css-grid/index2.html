@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CCS Grids</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .wrapper{
+                display: grid;
+               /* grid-template-columns: 1fr 2fr 1fr;
+                */
+                grid-template-columns: repeat(3, 1fr);
+                grid-gap: 1em;
+                /*grid-auto-rows: 100px;*/
+                grid-auto-rows: minmax(100px, auto);
+
+            }
+
+            .nested{
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                grid-auto-rows: 70px;
+                grid-gap:  1em;
+            }
+
+            .nested > div {
+                border: #333 1px solid;
+                padding: 1em;                    
+            }
+
+            .wrapper > div{
+                background: #eee;
+                padding:  1em;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptas ut fugiat sunt consequuntur, optio autem officia dolore nemo necessitatibus error suscipit officiis esse iusto incidunt sequi cum eveniet laudantium, voluptatem totam quas unde! Accusantium eligendi vero repellat, commodi exercitationem optio.
+            </div>
+            <div class="nested">
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                <div>lorem</div>
+                
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+            <div>
+                Lorem ipsum dolor sit.
+            </div>
+        </div>
+    </body>
+</html>

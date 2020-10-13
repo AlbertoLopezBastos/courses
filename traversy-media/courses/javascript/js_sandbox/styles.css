@@ -1,0 +1,11 @@
+ul {
+  border: 1px black solid;
+  text-decoration: none;
+  list-style: none;
+  text-align: center;
+}
+
+li {
+  border: 1px black solid;
+  transition: all 0.1s ease-in;
+}

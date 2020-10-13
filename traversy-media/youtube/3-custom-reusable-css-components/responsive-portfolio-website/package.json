@@ -1,0 +1,17 @@
+{
+  "name": "modern_portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "homepage": "https://Alberto-LopezBastos.github.io/Study/03-CustomReusableCSSComponents/ResponsivePortfolioWebsite",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive",
+    "deploy": "gh-pages -d dist"
+  },
+  "author": "Alberto Lopez Bastos",
+  "license": "MIT",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}

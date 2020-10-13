@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>CSS VARIABLES TUTORIAL</title>
+</head>
+<body>
+    <header id="main-header">
+        <h1>CSS Variables</h1>
+    </header >
+    
+    <div class="container">
+        <div class="grid">            
+            <div class="box">
+                <h1>Hello World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione culpa, perferendis neque corporis itaque, asperiores doloremque vero eum ut quia illum eveniet modi incidunt unde, assumenda similique voluptatum placeat quos iusto facere. Fugiat corporis aspernatur nihil consectetur. Minus eos nam deleniti molestias fugit delectus? Nobis nesciunt cum quibusdam eius quisquam?</p>
+            </div>
+            <div class="box">
+                <h1>Hello World</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione culpa, perferendis neque corporis itaque, asperiores doloremque vero eum ut quia illum eveniet modi incidunt unde, assumenda similique voluptatum placeat quos iusto facere. Fugiat corporis aspernatur nihil consectetur. Minus eos nam deleniti molestias fugit delectus? Nobis nesciunt cum quibusdam eius quisquam?</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <script>
+        /* obtendo una variable css  y la muestro en la consola */
+        const box = document.querySelector('.box');
+        const boxstlyes = getComputedStyle(box);
+        const boxMainColor = boxstlyes.getPropertyValue('--box-main-color');
+        console.log(boxMainColor);
+
+        /* cambio un css desde javascript */
+        const header = document.querySelector('#main-header');
+        header.style.setProperty('--header-bg-color', boxMainColor);
+    </script>
+</body>
+</html>

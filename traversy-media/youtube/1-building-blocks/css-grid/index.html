@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CCS Grids</title>
+        <link rel="stylesheet" href="css/style.css">
+        <style>
+            .wrapper{
+                display: grid;
+                grid-template-columns: 70% 30%;
+                /*
+                    grid-column-gap:1em;
+                    grid-row-gap:1em;
+                */
+                grid-gap:1em;
+            }
+
+            .wrapper > div{
+                background: #eee;
+                padding:  1em;
+            }
+
+            .wrapper > div:nth-child(odd){
+                background: #ddd;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum quam error ipsum voluptatum dolor facere illum alias! Vero dolor quos laborum consequatur, autem, adipisci nihil doloremque accusamus saepe eius sit, quo consectetur incidunt libero quis iusto quia velit voluptate sed? Exercitationem consequuntur eius possimus animi asperiores! Eligendi natus saepe odio maiores minima veniam numquam sed unde repellat. Distinctio perspiciatis earum illo debitis numquam totam, deleniti esse libero officiis dolore et beatae odit excepturi sit sunt enim ex, eum autem.
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eius maxime quia! Consequuntur, eligendi fugit facere eveniet ipsum sequi quae quisquam officia necessitatibus id. Ut, placeat corrupti. Eos, fuga perspiciatis!
+            </div>
+            <div>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laborum quam error ipsum voluptatum dolor facere illum alias! Vero dolor quos laborum consequatur, autem, adipisci nihil doloremque accusamus saepe eius sit, quo consectetur incidunt libero quis iusto quia velit voluptate sed? Exercitationem consequuntur eius possimus animi asperiores! Eligendi natus saepe odio maiores minima veniam numquam sed unde repellat. Distinctio perspiciatis earum illo debitis numquam totam, deleniti esse libero officiis dolore et beatae odit excepturi sit sunt enim ex, eum autem.
+            </div>
+            <div>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa eius maxime quia! Consequuntur, eligendi fugit facere eveniet ipsum sequi quae quisquam officia necessitatibus id. Ut, placeat corrupti. Eos, fuga perspiciatis!
+            </div>
+
+        </div>
+    </body>
+</html>

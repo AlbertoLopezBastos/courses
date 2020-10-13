@@ -1,0 +1,17 @@
+.option{
+    border-bottom: 1px solid lighten($light-blue, 10%);
+    display:flex;
+    justify-content:space-between;
+    padding: $l-size $m-size;
+}
+
+.option__text{
+    color:#f4f4f4;
+    font-weight: 500;
+    font-size: 2rem;
+    margin: 0;
+    padding-right: $l-size;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+

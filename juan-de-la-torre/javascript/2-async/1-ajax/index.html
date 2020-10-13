@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JavaScript Sandbox</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Test de xmlHttpRequest con txt</h2>
+      <a href="#" class="button" id="cargar">Cargar</a>
+      <div id="listado"></div>
+      <hr />
+      <h2>Test de xmlHttpRequest con JSON local</h2>
+      <button id="boton1">Empleado</button>
+      <button id="boton2">Empleados</button>
+      <br /><br />
+      <h4>Empleado:</h4>
+      <div id="empleado"></div>
+      <h4>Empleados:</h4>
+      <div id="empleados"></div>
+      <hr />
+      <h2>Test de xmlHttpRequest con JSON Externo (API)</h2>
+      <a href="#" class="button" id="fetch">Cargar</a>
+      <div id="lista"></div>
+
+      <script src="txt.js"></script>
+      <script src="json.js"></script>
+      <script src="jsonApi.js"></script>
+    </div>
+
+    <style>
+      .container {
+        margin-top: 40px;
+      }
+    </style>
+  </body>
+</html>
