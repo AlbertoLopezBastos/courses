@@ -24,7 +24,19 @@ $color-black: #000;
 
 $grid-width: 114rem;
 $gutter-vertical: 8rem;
+$gutter-vertical-small: 6rem;
 $gutter-horizontal: 6rem;
 
 // FONTS
 $default-font-size: 1.6rem;
+
+/* MEDIA QUERY VARIABLES
+No se usa pixel porque si el usuario cambia el font-size del navegador rompe todo.
+En las media querys tanto em como rem no respetan al font size 62.5% que pusimos en el html, siempre respetara el font-size del usuario.
+Pensaremos entonces que rem y em se basan en un default font-size de usuario de 16px, o lo que el tenga.
+Usamos em porque rem falla en algunos navegadores. 
+*/
+$phone: 37.5em; // 600px (600/16)
+$tab-port: 56.25em; // 900px (900/16)
+$tab-land: 75em; // 1200px (1200/16)
+$big-desktop: 112.5em; // 1800px (1800/16)

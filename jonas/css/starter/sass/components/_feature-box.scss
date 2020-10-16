@@ -8,6 +8,11 @@
   transition: transform 0.3s;
   min-height: 35rem;
 
+  @include respond($tab-port) {
+    padding: 2rem;
+    min-height: 25rem;
+  }
+
   &__icon {
     background-image: linear-gradient(to right, $color-primary-light, $color-primary-dark);
     display: inline-block;
@@ -15,6 +20,10 @@
     color: transparent;
     font-size: 6rem;
     margin-bottom: 0.6rem;
+
+    @include respond($tab-port) {
+      margin-bottom: 0rem;
+    }
   }
 
   &:hover {

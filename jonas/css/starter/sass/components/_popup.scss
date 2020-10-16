@@ -28,6 +28,10 @@
     width: 33.3333333%;
     display: table-cell;
     vertical-align: middle;
+
+    @include respond($phone) {
+      display: none;
+    }
   }
   &__right {
     width: 66.6666667%;
@@ -54,6 +58,10 @@
     -moz-hyphens: auto;
     -ms-hyphens: auto;
     -webkit-hyphens: auto;
+
+    @include respond($phone) {
+      columns: 1;
+    }
   }
 
   &:target {
