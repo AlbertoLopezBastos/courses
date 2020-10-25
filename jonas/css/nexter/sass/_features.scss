@@ -3,17 +3,30 @@
 
   margin: 15rem 0;
 
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-  grid-gap: 6rem;
-  align-items: start;
+  // ejemplo de como contemplar que no haya grid
+  @supports (display: grid) {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 6rem;
+    align-items: start;
+  }
 }
 
 .feature {
+  float: left;
+  width: 33.3333%;
+  margin-bottom: 6rem;
+
+  // reinicio todo menos el float que grid lo ignora
+  @supports (display: grid) {
+    width: auto;
+    margin-bottom: 0;
+  }
+
   display: grid;
   grid-template-columns: min-content 1fr;
-  grid-row-gap: 1.5rem;
-  grid-column-gap: 2.5rem;
+  row-gap: 1.5rem;
+  column-gap: 2.5rem;
 
   &__icon {
     fill: $color-primary;
